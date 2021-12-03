@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="scss/styles.css" />
+    <link rel="shortcut icon" href="favicon/favicon.png" type="image/x-icon" />
+    <title>WeatherStat</title>
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>WeatherStat</h1>
+        <form class="form">
+          <input
+            class="form__input"
+            type="search"
+            id="search-input"
+            placeholder="Cities, towns, etc..."
+            autocomplete="off"
+          />
+          <button class="form__input__btn" id="searchBtn">Search</button>
+        </form>
+      </header>
+      <section class="weather__card weather__card--active">
+        <article class="weather__card__header">
+          <header>
+            <p class="weather__card__header__location" id="location"></p>
+            <span class="weather__card__header__desc" id="weather-desc"></span>
+          </header>
+          <p id="weather-icon"></p>
+        </article>
+        <article class="weather__card__main__weather">
+          <article class="weather__card__main__weather__col__1">
+            <article>
+              <h2 class="weather__card__main__weather__h2">Temperature</h2>
+              <span class="weather__card__main__weather__h2__span" id="temp"></span>
+            </article>
+            <article>
+              <h2 class="weather__card__main__weather__h2">Feels Like</h2>
+              <span class="weather__card__main__weather__h2__span" id="feels-like"></span>
+            </article>
+            <article>
+              <h2 class="weather__card__main__weather__h2">Humidity</h2>
+              <span class="weather__card__main__weather__h2__span" id="humidity"></span>
+            </article>
+          </article>
+          <article class="weather__card__main__weather__col__2">
+            <article>
+              <h2 class="weather__card__main__weather__h2">Min Temp</h2>
+              <span class="weather__card__main__weather__h2__span" id="min-temp"></span>
+            </article>
+            <article>
+              <h2 class="weather__card__main__weather__h2">Max Temp</h2>
+              <span class="weather__card__main__weather__h2__span" id="max-temp"></span>
+            </article>
+          </article>
+        </article>
+        <p class="weather__card__unit">Change to <button id="change-unit">Fahrenheit °F</button></p>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
