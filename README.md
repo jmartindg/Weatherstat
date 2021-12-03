@@ -17,4 +17,4 @@ A simple weather web application where you can search for current weather data i
 
 ## API Used
 
-- [OpenWeatherMap]('https://openweathermap.org/')
+- [OpenWeatherMap](https://openweathermap.org/)
